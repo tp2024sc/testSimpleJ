@@ -45,7 +45,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 echo 'mvn install -Dmaven.test.skip=false'
+                 sh 'mvn install -Dmaven.test.skip=false'
             }
         }
 
