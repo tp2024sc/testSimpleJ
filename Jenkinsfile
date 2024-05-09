@@ -37,7 +37,7 @@ pipeline {
             steps {
                 checkout([
                     $class: 'GitSCM', 
-                    branches: [[name: '*/main']], 
+                    branches: [[name: '*/master']], 
                     userRemoteConfigs: [[url: 'https://github.com/mbachmann/spring-petclinic-maven-java11']]
                 ])
             }
