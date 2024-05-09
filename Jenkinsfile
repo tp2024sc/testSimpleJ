@@ -38,7 +38,7 @@ pipeline {
                 checkout([
                     $class: 'GitSCM', 
                     branches: [[name: '*/main']], 
-                    userRemoteConfigs: [[url: 'https://github.com/tp2024sc/testSimpleJ.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/mbachmann/spring-petclinic-maven-java11']]
                 ])
             }
         }
